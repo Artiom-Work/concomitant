@@ -1,0 +1,26 @@
+.b-socials {
+  max-width: 251px;
+  width: 100%;
+  min-height: 48px;
+  background-color: $majorColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 13px 9px;
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+    font-size: 16px;
+    color: $lightestColor;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    &:hover {
+      background: #00acee;
+    }
+  }
+}

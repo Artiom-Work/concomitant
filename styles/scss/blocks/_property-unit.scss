@@ -1,0 +1,44 @@
+.b-property-unit {
+  text-align: center;
+  &_top-margin {
+    &:nth-child(n + 3) {
+      @include media-breakpoint-only(sm) {
+        margin-top: 15px;
+      }
+    }
+    &:nth-child(n + 2) {
+      @include media-breakpoint-only(xs) {
+        margin-top: 15px;
+      }
+    }
+  }
+  &__icon {
+    font-size: 3.8rem;
+    margin-bottom: 5px;
+    &_users {
+      color: #c45f4b;
+    }
+    &_globe {
+      color: #cf9d41;
+    }
+    &_cogs {
+      color: #3d5f12;
+    }
+    &_leaf {
+      color: #7da3b7;
+    }
+  }
+
+  &__head {
+    padding: 15px 10px;
+    color: $majorColor;
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+  }
+  &__desc {
+    font-size: 13px;
+    line-height: 151%;
+    color: $lightColor;
+    padding: 0 5px;
+  }
+}

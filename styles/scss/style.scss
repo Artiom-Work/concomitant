@@ -1,0 +1,63 @@
+@import "../../packages/bootstrap-4.1.1/scss/bootstrap.scss";
+@import "_variables.scss";
+
+@import "blocks/header.scss";
+@import "blocks/logo-and-slogan.scss";
+@import "blocks/socials.scss";
+@import "blocks/login-nav.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-search.scss";
+@import "blocks/main-page-slider.scss";
+@import "blocks/property-unit.scss";
+@import "blocks/project.scss";
+@import "blocks/footer.scss";
+@import "blocks/blog.scss";
+@import "blocks/form.scss";
+@import "blocks/copyrights.scss";
+
+body {
+  font-family: "Lora Regular", "Georgia Regular", serif;
+  color: $darkColor;
+  background: #1f1f1f;
+  line-height: 1.25;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.top-line {
+  height: 5px;
+  background-color: $majorColor;
+  margin: 0 -15px;
+}
+.container {
+  background: #fff;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.properties {
+  margin-top: 50px;
+}
+.full-width-divider {
+  height: 2px;
+  background: #e2e2e2;
+  margin: 48px 0 50px;
+  border: none;
+}
+.projects {
+  margin-bottom: 43px;
+}

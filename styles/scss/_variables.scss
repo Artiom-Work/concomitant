@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Georgia Regular";
+  src: url(../../fonts/Georgia_Regular.ttf);
+}
+@font-face {
+  font-family: "Lora Bold";
+  src: url("Lora-Bold.eot");
+  src: local("Lora Bold"), local("Lora-Bold"),
+    url("../../fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Lora-Bold.woff") format("woff"),
+    url("../../fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lora SemiBold";
+  src: url("Lora-Bold.eot");
+  src: local("Lora Bold"), local("Lora-Bold"),
+    url("../../fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Lora-Bold.woff") format("woff"),
+    url("../../fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora Regular";
+  src: url("Lora-Regular.eot");
+  src: local("Lora Regular"), local("Lora-Regular"),
+    url("../../fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Lora-Regular.woff") format("woff"),
+    url("../../fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$majorColor: #81b300;
+$darkColor: #333;
+$lightColor: #999;
+$hoverColor: #00acee;
+$lightestColor: #fff;
+
+$mainFont: "Georgia Regular", sans-serif;

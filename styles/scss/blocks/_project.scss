@@ -1,0 +1,40 @@
+.b-project {
+  &-wrapper_margin {
+    &:nth-child(n + 3) {
+      @include media-breakpoint-only(md) {
+        margin-top: 30px;
+      }
+      @include media-breakpoint-down(sm) {
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    min-height: 140px;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 143%;
+    margin: 14px 0 7px 0;
+  }
+  &__desc {
+    font-size: 13px;
+    line-height: 162%;
+    color: $lightColor;
+    margin-bottom: 6px;
+  }
+  &__details {
+    display: block;
+    text-align: right;
+    color: $majorColor;
+    font-size: 13px;
+    line-height: 162%;
+    transition-duration: 0.5s;
+    &:hover {
+      color: $darkColor;
+    }
+  }
+}

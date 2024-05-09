@@ -1,0 +1,41 @@
+.b-site-search {
+  height: 30px;
+  &__field {
+    &-wrapper {
+      float: left;
+      height: inherit;
+    }
+    max-width: 214px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: inherit;
+    color: $lightColor;
+    padding: 7px 8px 8px;
+    transition-duration: 0.5s;
+    &:focus {
+      background: lighten($majorColor, 50%);
+    }
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+  &__btn {
+    height: inherit;
+    border: none;
+    outline: none;
+    color: $majorColor;
+    background: $lightestColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    border-left: 1px solid $lightColor;
+    transition-duration: 0.5s;
+    &:hover {
+      cursor: pointer;
+      background: $lightColor;
+      color: $lightestColor;
+    }
+  }
+}

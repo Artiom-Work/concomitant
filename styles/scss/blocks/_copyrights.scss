@@ -1,0 +1,16 @@
+.b-copirights {
+  min-height: 60px;
+  background-color: #2e2e2e;
+  color: $lightColor;
+  line-height: 60px;
+  padding: 0 28px;
+  &__text {
+    font-size: 12px;
+    line-height: inherit;
+    letter-spacing: 0.03em;
+    color: #737373;
+  }
+  @include media-breakpoint-down(sm) {
+    line-height: 40px;
+  }
+}

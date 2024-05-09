@@ -1,0 +1,34 @@
+.b-blog {
+  &__title {
+    font-family: "Lora Bold", "Georgia Regular", serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100.8%;
+    letter-spacing: 0.07em;
+    margin-bottom: 6px;
+  }
+  &__subtitle {
+    font-family: "Lora Regular", "Georgia Regular", serif;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    line-height: 118%;
+  }
+  &__text {
+    font-family: "Lora Regular", "Georgia Regular", serif;
+    font-size: 12px;
+    line-height: 158%;
+    letter-spacing: 0.03em;
+  }
+  &__link {
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: $majorColor;
+    transition-duration: 0.5s;
+    font-weight: 600;
+    font-size: 12px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

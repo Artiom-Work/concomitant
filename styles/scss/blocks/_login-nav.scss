@@ -1,0 +1,22 @@
+.b-login-nav {
+  &__list {
+    max-width: 253px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    font-size: 12px;
+    color: $majorColor;
+    transition-duration: 0.5s;
+    font-family: "Lora Regular";
+    &:hover {
+      color: $darkColor;
+    }
+  }
+  &__divider {
+    position: relative;
+    color: $majorColor;
+  }
+}

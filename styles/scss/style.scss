@@ -1,4 +1,4 @@
-@import "../../packages/bootstrap-4.1.1/scss/bootstrap.scss";
+@import "../../packages/bootstrap-5.3.3/scss/bootstrap.scss";
 @import "_variables.scss";
 
 @import "blocks/header.scss";
@@ -36,7 +36,7 @@ a:hover {
 .top-line {
   height: 5px;
   background-color: $majorColor;
-  margin: 0 -15px;
+  margin: 0 -12px;
 }
 .container {
   background: #fff;

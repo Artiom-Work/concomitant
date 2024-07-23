@@ -1,7 +1,7 @@
 .b-footer {
   background: #484848;
   color: $lightColor;
-  padding: 40px 24px 18px 14px;
+  padding: 38px 20px 20px 16px;
   &__unit {
     @include media-breakpoint-only(md) {
       &:nth-child(n + 3) {
@@ -21,11 +21,14 @@
     margin-bottom: 22px;
     font-size: 13px;
     &_margin {
-      margin-bottom: 16px;
+      margin-bottom: 17px;
     }
     &_blog,
     &_form {
       margin-bottom: 27px;
+    }
+    &_form {
+      color: $lightestColor;
     }
   }
   &__unit-contact-desc {
@@ -42,7 +45,7 @@
   &__unit-nav {
     &-item {
       width: 100%;
-      padding: 8px 0;
+      padding: 8px 0 7.3px;
       font-size: 12px;
       letter-spacing: 0.03em;
       border-bottom: 1px solid transparentize($lightColor, 0.8);
@@ -57,9 +60,12 @@
       width: 100%;
       color: inherit;
       font-size: inherit;
-      transition-duration: 0.5s;
+      transition: all 0.4s ease 0s;
       &:hover {
         color: $majorColor;
+      }
+      &:active {
+        color: $lightestColor;
       }
     }
   }

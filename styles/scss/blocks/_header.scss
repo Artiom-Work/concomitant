@@ -1,10 +1,13 @@
 .b-header {
-  height: 135px;
+  min-height: 135px;
   max-width: 918px;
   width: 100%;
   position: relative;
+  @include media-breakpoint-down(md) {
+    min-height: 115px;
+  }
   @include media-breakpoint-down(sm) {
-    height: 220px;
+    min-height: 180px;
   }
   &__logo-and-slogan {
     position: absolute;
@@ -28,8 +31,11 @@
     position: absolute;
     right: 0;
     top: 80px;
+    @include media-breakpoint-down(md) {
+      top: 70px;
+    }
     @include media-breakpoint-down(sm) {
-      top: 170px;
+      top: 135px;
       left: 0;
     }
   }

@@ -1,24 +1,32 @@
 .b-project {
+  &-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 212px;
+    width: 100%;
+    min-height: 336px;
+    @include media-breakpoint-down(lg) {
+      max-width: 48%;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
   &-wrapper_margin {
     &:nth-child(n + 3) {
       @include media-breakpoint-only(md) {
         margin-top: 30px;
       }
-      @include media-breakpoint-down(sm) {
-        &:not(:first-child) {
-          margin-top: 30px;
-        }
-      }
     }
   }
   &__image {
     width: 100%;
-    min-height: 140px;
+    min-height: 138px;
   }
   &__name {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 143%;
-    margin: 14px 0 7px 0;
+    margin: 18px 0 8px 0;
   }
   &__desc {
     font-size: 13px;

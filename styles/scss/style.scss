@@ -1,3 +1,6 @@
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+@import "../../bootstrap/scss/mixins";
 @import "_variables.scss";
 @import "blocks/header.scss";
 @import "blocks/logo-and-slogan.scss";
@@ -49,13 +52,39 @@ a:hover {
 }
 .properties {
   margin-top: 50px;
+  &_side-margin {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  @include media-breakpoint-only(md) {
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 .full-width-divider {
-  height: 2px;
+  height: 2px !important;
   background: #e2e2e2;
   margin: 48px 0 50px;
   border: none;
 }
 .projects {
-  margin-bottom: 43px;
+  max-width: 902px;
+  width: 100%;
+  margin: 0 auto 44px;
+  &__list {
+    gap: 18px;
+    margin: 0 auto;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

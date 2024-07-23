@@ -12,7 +12,7 @@
     border: none;
     border-radius: 5px;
     color: $lightColor;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     transition-duration: 0.5s;
     &::placeholder {
       font-family: "Lora Regular", serif;
@@ -41,6 +41,11 @@
     transition-duration: 0.5s;
     &:hover {
       color: $lightestColor;
+      transform: scale(1.1);
+    }
+    &:active {
+      color: $lightestColor;
+      transform: scale(1.1);
     }
   }
 }

@@ -1,5 +1,8 @@
 .b-property-unit {
   text-align: center;
+  @include media-breakpoint-only(md) {
+    flex-basis: 50%;
+  }
   &_top-margin {
     &:nth-child(n + 3) {
       @include media-breakpoint-only(sm) {

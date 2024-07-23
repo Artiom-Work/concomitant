@@ -1,6 +1,9 @@
 .b-main-page-slider-wrp {
-  padding: 32px 31px 29px 29px;
+  padding: 31px 31px 71px 31px;
   background: #f2f2f2;
+  @include media-breakpoint-down(sm) {
+    padding: 12px 12px 71px 12px;
+  }
   &_bottom-border {
     border-bottom: 1px solid lighten($lightColor, 30%);
   }
@@ -9,20 +12,19 @@
     margin-right: -12px;
   }
   &__slider {
-    padding: 10px;
+    padding: 9px;
     background: $lightestColor;
     box-shadow: 0 0 1px lighten($lightColor, 30%);
   }
   &__bullets {
     position: absolute;
-    bottom: -40px;
-    left: 41.5%;
+    bottom: -42px;
     z-index: 2;
     display: flex;
     align-items: center;
     width: 156px;
+    left: calc(50% - (156px / 2));
     justify-content: space-between;
-    margin: 21px auto 0;
   }
   &__left,
   &__right {

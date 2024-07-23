@@ -4,11 +4,39 @@
   color: $lightColor;
   line-height: 60px;
   padding: 0 28px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+  &__left,
+  &__right {
+    max-width: 50%;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      text-align: center;
+    }
+    @media (max-width: 400px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__right {
+    text-align: right;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
   &__text {
     font-size: 12px;
     line-height: inherit;
     letter-spacing: 0.03em;
     color: #737373;
+    @media (max-width: 400px) {
+      font-size: 10px;
+    }
   }
   @include media-breakpoint-down(sm) {
     line-height: 40px;

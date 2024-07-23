@@ -18,5 +18,11 @@
   &__divider {
     position: relative;
     color: $majorColor;
+    font-size: 13px;
+    position: relative;
+    top: -1px;
+    &:not(last-child) {
+      left: 3px;
+    }
   }
 }

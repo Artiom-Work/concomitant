@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>CONCOMITANT</title>
@@ -20,18 +20,29 @@
 
 		<header class="b-header">
 			<div class="b-logo-and-slogan b-header__logo-and-slogan">
-				<p class="b-logo-and-slogan__logo">Concomitant</p>
-				<span class="b-logo-and-slogan__slogan">
+				<h1 class="b-logo-and-slogan__logo">
+					<a class="b-logo-and-slogan__link" href="index.html">Concomitant</a>
+				</h1>
+				<p class="b-logo-and-slogan__slogan">
 					Free PSD Website Template
-				</span>
+				</p>
 			</div>
 
 			<nav class="b-socials b-header__socials">
-				<i class="b-socials__icon fab fa-linkedin-in"></i>
-				<i class="b-socials__icon fab fa-twitter"></i>
-				<i class="b-socials__icon fab fa-pinterest"></i>
-				<i class="b-socials__icon fab fa-google-plus-g"></i>
-				<i class="b-socials__icon fas fa-rss"></i>
+				<a class="b-socials__link" href="https://www.linkedin.com/" target="_blank">
+					<i class="b-socials__icon fab fa-linkedin-in"></i>
+				</a>
+				<a class="b-socials__link" href="https://x.com/" target="_blank"> <i class="b-socials__icon fab fa-twitter"></i>
+				</a>
+				<a class="b-socials__link" href="https://ru.pinterest.com/" target="_blank">
+					<i class="b-socials__icon fab fa-pinterest"></i>
+				</a>
+				<a class="b-socials__link" href="https://support.google.com/" target="_blank">
+					<i class="b-socials__icon fab fa-google-plus-g"></i>
+				</a>
+				<a class="b-socials__link" href="https://rss.com/" target="_blank">
+					<i class="b-socials__icon fas fa-rss"></i>
+				</a>
 			</nav>
 
 			<nav class="b-login-nav">
@@ -69,7 +80,7 @@
 							<a class="b-main-nav__link" href="#!">full width</a>
 						</li>
 						<li class="b-main-nav__item">
-							<a class="b-main-nav__link" href="#!">fortfolio</a>
+							<a class="b-main-nav__link" href="#!">portfolio</a>
 						</li>
 						<li class="b-main-nav__item">
 							<a class="b-main-nav__link" href="#!">gallery</a>
@@ -110,10 +121,10 @@
 
 					<div class="b-main-page-slider-wrp__bullets">
 						<i class="b-main-page-slider-wrp__left fas fa-chevron-left" data-bs-target="#carouselExampleIndicators"
-							type="button" data-bs-slide="prev"></i>
+							data-bs-slide="prev"></i>
 
-						<div class="b-main-page-slider-wrp__bullet" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-							class="active"></div>
+						<div class="b-main-page-slider-wrp__bullet active" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"></div>
 						<div class="b-main-page-slider-wrp__bullet" data-bs-target="#carouselExampleIndicators"
 							data-bs-slide-to="1">
 						</div>
@@ -132,7 +143,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class="row properties properties_side-margin">
 				<section class="properties__property-unit b-property-unit col-sm-6 col-md-3 b-property-unit_top-margin">
@@ -178,12 +188,11 @@
 			</div>
 
 			<hr class="full-width-divider">
-			</hr>
 
 			<div class="projects">
 				<ul class="row projects__list">
 					<li class="col-md-6 col-lg-3 projects__item-wrapper b-project-wrapper b-project-wrapper_margin">
-						<atricle class="projects__item b-project">
+						<section class="projects__item b-project">
 							<div class="b-project__image-wrp">
 								<img class="b-project__image img-thumbnail" src="./images/projects/project-1.jpg" alt="Project preview">
 							</div>
@@ -193,10 +202,10 @@
 								mauris nulla hendimentesque elit semper nam a&nbsp;sapien urna sempus.
 							</p>
 							<a class="b-project__details" href="#!">View Details&nbsp;»</a>
-						</atricle>
+						</section>
 					</li>
 					<li class="col-md-6 col-lg-3 projects__item-wrapper b-project-wrapper b-project-wrapper_margin">
-						<atricle class="projects__item b-project">
+						<section class="projects__item b-project">
 							<div class="b-project__image-wrp">
 								<img class="b-project__image img-thumbnail" src="./images/projects/project-2.jpg" alt="Project preview">
 							</div>
@@ -206,10 +215,10 @@
 								mauris nulla hendimentesque elit semper nam a&nbsp;sapien urna sempus.
 							</p>
 							<a class="b-project__details" href="#!">View Details&nbsp;»</a>
-						</atricle>
+						</section>
 					</li>
 					<li class="col-md-6 col-lg-3 projects__item-wrapper b-project-wrapper b-project-wrapper_margin">
-						<atricle class="projects__item b-project">
+						<section class="projects__item b-project">
 							<div class="b-project__image-wrp">
 								<img class="b-project__image img-thumbnail" src="./images/projects/project-3.jpg" alt="Project preview">
 							</div>
@@ -219,10 +228,10 @@
 								mauris nulla hendimentesque elit semper nam a&nbsp;sapien urna sempus.
 							</p>
 							<a class="b-project__details" href="#!">View Details&nbsp;»</a>
-						</atricle>
+						</section>
 					</li>
 					<li class="col-md-6 col-lg-3 projects__item-wrapper b-project-wrapper b-project-wrapper_margin">
-						<atricle class="projects__item b-project">
+						<section class="projects__item b-project">
 							<div class="b-project__image-wrp">
 								<img class="b-project__image img-thumbnail" src="./images/projects/project-4.jpg" alt="Project preview">
 							</div>
@@ -232,11 +241,12 @@
 								mauris nulla hendimentesque elit semper nam a&nbsp;sapien urna sempus.
 							</p>
 							<a class="b-project__details" href="#!">View Details&nbsp;»</a>
-						</atricle>
+						</section>
 					</li>
 				</ul>
 			</div>
 		</main>
+
 		<footer class="row b-footer">
 			<section class="col-md-6 col-lg-3 b-footer__unit">
 				<h2 class="b-footer__unit-title">contact details</h2>
@@ -309,6 +319,7 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>

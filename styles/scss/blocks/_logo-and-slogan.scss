@@ -1,11 +1,30 @@
 .b-logo-and-slogan {
+  max-width: 400px;
+  @include media-breakpoint-down(md) {
+    max-width: 250px;
+  }
   &__logo {
     font-size: 51px;
     font-variant: small-caps;
     margin-bottom: -3px;
+    word-break: break-all;
     @include media-breakpoint-down(md) {
       font-size: 40px;
       margin-bottom: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    color: $darkColor;
+    transition: all 0.4s ease 0s;
+    @media (hover: hover) {
+      &:hover {
+        color: $majorColor;
+        text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.7);
+      }
+    }
+    &:active {
+      transform: scale(0.95);
     }
   }
   &__slogan {

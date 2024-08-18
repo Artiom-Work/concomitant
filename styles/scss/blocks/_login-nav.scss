@@ -7,12 +7,19 @@
     align-items: center;
   }
   &__link {
+    display: inline-block;
     font-size: 12px;
     color: $majorColor;
-    transition-duration: 0.5s;
+    transition: all 0.4s ease 0s;
     font-family: "Lora Regular";
-    &:hover {
-      color: $darkColor;
+    @media (hover: hover) {
+      &:hover {
+        color: $darkColor;
+        text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.7);
+      }
+    }
+    &:active {
+      transform: scale(0.9);
     }
   }
   &__divider {

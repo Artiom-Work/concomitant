@@ -40,9 +40,15 @@
     color: $majorColor;
     font-size: 13px;
     line-height: 162%;
-    transition-duration: 0.5s;
-    &:hover {
-      color: $darkColor;
+    transition: all 0.4s ease 0s;
+    @media (hover: hover) {
+      &:hover {
+        color: $darkColor;
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+      }
+    }
+    &:active {
+      transform: scale(0.9);
     }
   }
 }

@@ -32,10 +32,15 @@
     letter-spacing: 0.1em;
     border-left: 1px solid $lightColor;
     transition-duration: 0.5s;
-    &:hover {
-      cursor: pointer;
-      background: $lightColor;
-      color: $lightestColor;
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        background: $lightColor;
+        color: $lightestColor;
+      }
+    }
+    &:active {
+      text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.7);
     }
   }
 }

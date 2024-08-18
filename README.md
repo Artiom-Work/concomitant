@@ -20,7 +20,7 @@ $\color{limegreen}\text{Учебная работа}$
 
 Макет -> [**Figma**](https://www.figma.com/file/OsgvIlYliEA70z9bVNBFkk/concomitant?type=design&node-id=0%3A1&mode=dev&t=oTUzbguGUG7diacu-1)
 
-Вёрстка -> [**Git pages**]()
+Вёрстка -> [**Git pages**](https://artiom-work.github.io/concomitant/)
 
 <img src="images/website/concomitant-readme-image.png" width="600" alt="Изображение макета страницы">
 

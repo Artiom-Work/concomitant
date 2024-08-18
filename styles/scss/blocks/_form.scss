@@ -6,7 +6,8 @@
   }
   &__input {
     display: block;
-    padding: 5px 0px 6px 9px;
+    max-width: 210px;
+    padding: 5px 9px 6px;
     background: #1f1f1f;
     outline: none;
     border: none;
@@ -39,13 +40,15 @@
     text-transform: uppercase;
     font-family: "Lora SemiBold";
     transition-duration: 0.5s;
-    &:hover {
-      color: $lightestColor;
-      transform: scale(1.1);
+    @media (hover: hover) {
+      &:hover {
+        color: $lightestColor;
+        transform: scale(1.1);
+      }
     }
     &:active {
-      color: $lightestColor;
-      transform: scale(1.1);
+      color: $majorColor;
+      transform: scale(0.9);
     }
   }
 }
